@@ -12,3 +12,155 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+// Media
+
+@mobile: ~"(max-width: 500px)";
+
+// Mobile styling
+
+header {
+
+    @media @mobile{
+
+        flex-flow: column;
+        align-items: center;
+        padding: 3% 0 !important;
+        
+     
+    }
+
+    h1{
+        @media @mobile{
+
+            text-align: center;
+            padding-bottom: 2%;
+        }
+    }
+
+    nav{
+
+        @media @mobile{
+
+            
+            justify-content: space-evenly;
+            width: 100%;
+            
+         
+        }
+
+    }
+}
+
+
+.home {
+
+  
+    #intro{
+
+        @media @mobile {
+
+            width:90;
+            padding: 0 4%;
+        }
+    }
+
+    .content-section{
+
+       @media @mobile{
+
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: stretch; 
+            padding: 0 4%;;        
+            width:90%;
+            
+       }
+
+       div {
+
+        * {
+       
+            @media @mobile {
+
+                    width: 239%;
+                    margin: 2% 0;
+                            }
+          }
+
+        }
+
+        p {
+
+            @media @mobile{
+
+                font-size: 165%;
+            }
+        }
+
+        .img-content {
+
+            @media @mobile {
+
+                align-self: center;
+                justify-self: stretch;
+                min-width: 460px;
+                padding-left: 0px !important;
+                
+            }
+
+            img {
+
+                @media @mobile{
+
+                    object-fit: contain;
+                }
+                
+            }
+        }
+    }
+
+    .inverse-content {
+
+        @media @mobile {
+
+            flex-flow: column-reverse;
+        }
+    }
+
+    .content-destination{
+
+        @media @mobile {
+
+            margin: 0 !important;
+            padding: 0 4%;
+            padding-bottom: 6%;
+        }
+
+        *{
+
+            @media @mobile {
+
+                min-width: 460px;
+                
+            }
+        }
+    }
+
+    .content-pick{
+
+        @media @mobile{
+
+            flex-flow: column;
+            align-items: center;
+       }
+
+       div{
+
+            @media @mobile {
+
+                min-width: 380px;
+            }
+       }
+    }
+}
